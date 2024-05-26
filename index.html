@@ -11,7 +11,7 @@
             text-align: center;
             margin-top: 50px;
         }
-        input, button {
+        input, button, select {
             margin: 10px;
             padding: 10px;
             font-size: 16px;
@@ -31,7 +31,10 @@
         <input type="text" id="username" placeholder="أدخل اسم المستخدم">
         <br>
         <button onclick="startBroadcast()">بدء البث المباشر</button>
-        <button onclick="joinBroadcast()">الانضمام إلى بث مباشر</button>
+        <select id="broadcastList">
+            <option value="" disabled selected>اختر بث مباشر للانضمام</option>
+        </select>
+        <button onclick="joinSelectedBroadcast()">الانضمام إلى البث المختار</button>
     </div>
     <div id="video-container">
         <video id="video" controls autoplay></video>
