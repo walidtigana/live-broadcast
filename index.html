@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بث مباشر</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #video-container {
+            margin-top: 20px;
+        }
+        video {
+            width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>مرحباً بكم في منصة البث المباشر</h1>
+    <div>
+        <input type="text" id="username" placeholder="أدخل اسم المستخدم">
+        <br>
+        <button onclick="startBroadcast()">بدء البث المباشر</button>
+        <button onclick="joinBroadcast()">الانضمام إلى بث مباشر</button>
+    </div>
+    <div id="video-container">
+        <video id="video" controls autoplay></video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
